@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function()
+		{
+	$("#b1").click(function()
+			{
+		$("#xyz").text("Hello Hi");
+			});
+	$("#b2").click(function()
+			{
+		$("#abc").html("<h1 style=color:blue;>Hello JQuery</h1>");
+			});
+	$("#b3").click(function()
+		{
+	    $("#efg").val("JQUERY is Simple");
+		});
+	});
+</script>
+</head>
+<body>
+<p id="xyz">Welcome to Marlabs</p>
+<p id="abc">Welcome to JQuery</p>
+<p>Input Field: <input type="text" id="efg" value="Jquery"></p>
+<button id="b1">Show Text</button>
+<button id="b2">Show HTML</button>
+<button id="b3">Show Value</button>
+</body>
+</html>

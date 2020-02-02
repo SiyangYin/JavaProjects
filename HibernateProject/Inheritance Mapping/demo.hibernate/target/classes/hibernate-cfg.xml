@@ -1,0 +1,24 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+    <property name="hbm2ddl.auto">update</property>
+	<property name="show_sql">true</property>
+	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	<property name="connection.url">jdbc:mysql://localhost/usa13</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">root</property>
+	<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+	<!-- <mapping class="com.hibernate.demo.hibernate.Employee1"/>   
+    <mapping class="com.hibernate.demo.hibernate.RegularEmployee_con"/>  
+    <mapping class="com.hibernate.demo.hibernate.ContractEmployee_con"/> -->
+    
+    <mapping resource="userconcrete-mapping.xml"/>
+  
+ <!--  <mapping class="com.hibernate.demo.hibernate.Employee_TPH_Annotation"/>   
+  <mapping class="com.hibernate.demo.hibernate.Regular_Employee_TPH_Annotation"/>  
+  <mapping class="com.hibernate.demo.hibernate.Contract_Employee_TPH_Annotation"/>   -->
+  
+</session-factory>
+</hibernate-configuration>

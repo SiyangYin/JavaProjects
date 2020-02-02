@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+function f1()
+{
+	var x1="<h1 style=color:red;>ABC</h1>";  // Create Text with HTML
+	var x2=$("<p></p>").text("XYZ"); // Create Text with JQUERY
+	var x3=document.createElement("p"); 
+	x3.innerHTML="EFG";         // Create Text with DOM
+	$("body").append(x1, x2, x3); // Appending elements
+}
+</script>
+</head>
+<body>
+<h1 style="color:purple">JQUERY is Very Easy to Understand</h1>
+<p>Welcome to Marlabs</p>
+<button onclick="f1()">Click</button>
+</body>
+</html>

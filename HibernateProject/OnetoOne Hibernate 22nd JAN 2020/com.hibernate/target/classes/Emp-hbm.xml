@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="hibernate.demo.com.hibernate.Emp" table="emp_129">
+<id name="id" column="emp2_id">
+</id>
+<property name="name" column="emp2_name"></property>
+<one-to-one name="phoneno" cascade="all"></one-to-one>
+</class>
+<class name="hibernate.demo.com.hibernate.PhoneNumber" table="phone_129">
+<id name="pid">
+</id>
+<property name="network"></property>
+<property name="phonenumber"></property>
+<one-to-one name="emp"></one-to-one>
+</class>
+</hibernate-mapping>
